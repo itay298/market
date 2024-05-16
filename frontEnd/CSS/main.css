@@ -1,0 +1,80 @@
+/* Common main styles */
+
+#main {
+    padding-top: 100px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+}
+
+#main > .container {
+    padding: 15px;
+}
+
+/* Search style */
+
+#main > .container > .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main > .container > .search > form {
+    display: flex;
+    height: 70px;
+    width: 50%;
+    justify-content: center;
+}
+
+#main > .container > .search > form > fieldset {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid var(--font-color);
+    transition: .3s ease-in-out;
+}
+
+#main > .container > .search > form > fieldset:hover {
+    box-shadow: 1px 1px 5px var(--font-color);
+}
+
+#main > .container > .search > form > fieldset > #search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: large;
+}
+
+#main > .container > .search > form > fieldset > button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* Main product style */
+#main > .container > .products > .container{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#main > .container > .products > .container > .items {
+    display: grid;
+    padding: 15px;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+#main > .container > .products > .container > .items > div {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid var(--font-color);
+    border-radius: 15px;
+}

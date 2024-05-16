@@ -1,0 +1,27 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+/* Common styles */
+
+:root {
+    --font-color: #3c3c3c;
+    --font-color-bright: #f3f3f3;
+    --background-color: hsla(202, 100%, 64%, 0.147);
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--font-color)
+}
+
+h1 {
+    margin: 0;
+}

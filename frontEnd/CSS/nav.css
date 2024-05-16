@@ -1,0 +1,80 @@
+/* Common Navbar styles */
+
+.navbar ul{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a, #main-nav #main-logo a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+#main-nav #main-logo a:hover{
+    color: black;
+}
+
+.navbar ul li a::after {
+    content: "";
+    display: block;
+    width: 1%;
+    height: 1px;
+    background-color: transparent;
+    margin-top: -2px;
+    transition: .3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+.navbar ul li a:hover::after {
+    background-color: black;
+    width: 100%;
+}
+
+/* Main navbar styles */
+#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: var(--background-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    width: 100%;
+    user-select: none;
+}
+
+.resp-bars {
+    display: none;
+}
+
+.resp-bars button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+    }
+    #main-nav .logo {
+        font-size: large;
+        font-weight: bold;
+    }
+    #main-nav .navbar {
+        display: none;
+    }
+    .resp-bars {
+        display: block;
+    }
+}
